@@ -35,7 +35,6 @@ $aVistas=[
     "micuenta"=>"view/vMiCuenta.php",
     "cambiarpassword"=>"view/vCambiarPassword.php",
     "borrarcuenta"=>"view/vBorrarCuenta.php",
-    
 ];
 ?>
 
