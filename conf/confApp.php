@@ -1,11 +1,11 @@
 <?php
 
 require_once 'core/221024ValidacionFormularios.php';
-//require_once 'model/DB.php';
-//require_once 'model/UsuarioDB.php';
-//require_once 'model/Usuario.php';
-//require_once 'model/UsuarioPDO.php';
-//require_once 'model/DBPDO.php';
+require_once 'model/DB.php';
+require_once 'model/UsuarioDB.php';
+require_once 'model/Usuario.php';
+require_once 'model/UsuarioPDO.php';
+require_once 'model/DBPDO.php';
 //require_once 'model/AppError.php';
 
 define("OBLIGATORIO", 1);
