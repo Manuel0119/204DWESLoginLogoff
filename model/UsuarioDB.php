@@ -1,5 +1,5 @@
 <?php
-interface UsuarioDB{
-    public function validarUsuario($codUsuario, $password);
+interface UsuarioDB {
+    public static function validarUsuario($codUsuario,$password);
 }
 ?>

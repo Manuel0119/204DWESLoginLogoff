@@ -1,6 +1,6 @@
 <?php
-interface DB{
-    public function ejecutarConsulta($sentenciaSQL, $parametros);
+interface DB {
+    public static function ejecutarConsulta($entradaSQL, $parametros);
 }
 ?>
 
