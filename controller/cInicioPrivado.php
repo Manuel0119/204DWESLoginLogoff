@@ -11,5 +11,4 @@ if(isset($_REQUEST['detalle'])){
     header("Location: index.php"); 
 }
 require_once $aVistas['layout'];
-?>
 

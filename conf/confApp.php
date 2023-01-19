@@ -7,7 +7,6 @@ require_once 'model/Usuario.php';
 require_once 'model/UsuarioPDO.php';
 require_once 'model/DBPDO.php';
 //require_once 'model/AppError.php';
-
 define("OBLIGATORIO", 1);
 
 $aControladores=[
@@ -37,4 +36,3 @@ $aVistas=[
     "borrarCuenta"=>"view/vBorrarCuenta.php",
 ];
 ?>
-

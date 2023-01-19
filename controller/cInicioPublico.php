@@ -7,4 +7,3 @@ if (isset($_REQUEST['login'])) {//
 }
 require_once $aVistas['layout'];
 ?>
-
