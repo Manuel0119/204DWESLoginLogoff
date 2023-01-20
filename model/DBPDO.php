@@ -8,11 +8,9 @@ class DBPDO implements DB {
         try {
             $oPDO = new PDO(DSN, USER, PASSWORD);
             $consulta = $oPDO->prepare($entradaSQL);
-            $consulta->execute();
+            $consulta->execute($parametros);
             return $consulta;
         } catch (PDOException $exc) {
-            echo 'Error: ' . $excepcion->getMessage() . "<br>";
-            echo 'Código de error: ' . $excepcion->getCode() . "<br>";
             header("Location: index.php");
         } finally {
             unset($oPDO);

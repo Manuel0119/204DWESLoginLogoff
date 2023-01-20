@@ -9,57 +9,75 @@ class Usuario {
     private $fechaHoraUltimaConexion;
     private $fechaHoraUltimaConexionAnterior;
     private $perfil;
-    
-    public function __construct($codUsuario,$password,$descUsuario,$numConexiones,$fechaHoraUltimaConexionAnterior) {
-        $this->codUsuario= $codUsuario;
-        $this->password=$password;
-        $this->descUsuario=$descUsuario;
-        $this->numConexiones=$numConexiones;
-        $this->fechaHoraUltimaConexion= new DateTime("now");
-        $this->fechaHoraUltimaConexionAnterior=$fechaHoraUltimaConexionAnterior;
+    private $imagenUsuario;
+
+    function __construct($codUsuario, $password, $descUsuario, $numConexiones, $fechaHoraUltimaConexionAnterior, $perfil, $imagenUsuario) {
+        $this->codUsuario = $codUsuario;
+        $this->password = $password;
+        $this->descUsuario = $descUsuario;
+        $this->numConexiones = $numConexiones;
+        $this->fechaHoraUltimaConexion = new DateTime("now");
+        $this->fechaHoraUltimaConexionAnterior = $fechaHoraUltimaConexionAnterior;
+        $this->perfil = $perfil;
+        $this->imagenUsuario = $this->imagenUsuario;
     }
 
-    function getCodUsuario(){
+    function getCodUsuario() {
         return $this->codUsuario;
     }
+
     function getPassword() {
         return $this->password;
     }
-    function getDescUsuario(){
+
+    function getDescUsuario() {
         return $this->descUsuario;
     }
+
     function getNumConexiones() {
         return $this->numConexiones;
     }
-    function getFechaHoraUltimaConexion(){
+
+    function getFechaHoraUltimaConexion() {
         return $this->fechaHoraUltimaConexion;
     }
+
     function getFechaHoraUltimaConexionAnterior() {
         return $this->fechaHoraUltimaConexionAnterior;
     }
+
     function getPerfil() {
         return $this->perfil;
     }
-    function setCodUsuario($codUsuario){
-        $this->codUsuario=$codUsuario;
+
+    function setCodUsuario($codUsuario) {
+        $this->codUsuario = $codUsuario;
     }
+
     function setPassword($password) {
-        $this->password=$password;
+        $this->password = $password;
     }
-    function setDescUsuario($descUsuario){
-        $this->descUsuario=$descUsuario;
+
+    function setDescUsuario($descUsuario) {
+        $this->descUsuario = $descUsuario;
     }
+
     function setNumConexiones($numConexiones) {
-        $this->numConexiones=$numConexiones;
+        $this->numConexiones = $numConexiones;
     }
-    function setFechaHoraUltimaConexion($fechaHoraUltimaConexion){
-        $this->fechaHoraUltimaConexion=$fechaHoraUltimaConexion;
+
+    function setFechaHoraUltimaConexion($fechaHoraUltimaConexion) {
+        $this->fechaHoraUltimaConexion = $fechaHoraUltimaConexion;
     }
+
     function setFechaHoraUltimaConexionAnterior($fechaHoraUltimaConexionAnterior) {
-        $this->fechaHoraUltimaConexionAnterior=$fechaHoraUltimaConexionAnterior;
+        $this->fechaHoraUltimaConexionAnterior = $fechaHoraUltimaConexionAnterior;
     }
+
     function setPerfil($perfil) {
-        $this->perfil=$perfil;
+        $this->perfil = $perfil;
     }
+
 }
+
 ?>
