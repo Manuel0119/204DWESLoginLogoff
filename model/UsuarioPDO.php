@@ -22,7 +22,7 @@ class UsuarioPDO implements UsuarioDB {
     public static function registrarUltimaConexion($oUsuario) {
         $oUsuario->setNumConexiones($oUsuario->getNumConexiones() + 1);
         $SQLActualizacionNumConexiones = <<<query
-              UPDATE T01_Usuario SET T01_NumConexiones=T01_NumConexiones,T01_FechaHoraUltimaConexion=now()
+              UPDATE T01_Usuario SET T01_NumConexiones=T01_NumConexiones+1,T01_FechaHoraUltimaConexion=now()
               WHERE T01_CodUsuario="{$oUsuario->getCodUsuario()}";
               query;
         DBPDO::ejecutarConsulta($SQLActualizacionNumConexiones);
