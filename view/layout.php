@@ -16,26 +16,32 @@
             .formulario{
                 border: none;
             }
-            body{
-                display: flex;
-                flex-direction: row-reverse;
-                justify-content: space-evenly;
-                align-items: center;
-                margin-top: 0;
-            }
-            main{
+            header{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
+            tbody {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .encabezado-layout {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
         </style>
     </head>
     <body>
-        <main>
-            <h1>204DWESLoginLogoff</h1>
-            <h2>Aplicacion multicapa y orientada a objetos</h2>
+        <header>
+            <div class="encabezado-layout">
+                <h1>204DWESLoginLogoff</h1>
+                <h2>Aplicacion multicapa y orientada a objetos</h2>
+            </div>
             <?php require_once $aVistas[$_SESSION['paginaEnCurso']]; ?>
-        </main>
+        </header>
         <footer>
             <div><a href="../../204DWESProyectoDWES/indexProyectoDWES.php"><img style="padding: 0em 1em;" src="webroot/logo_propio.png" alt="logo" id="logo"></a></div>
             2022-23 Manuel Martín Alonso. ©Todos los derechos reservados.
