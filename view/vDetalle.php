@@ -46,6 +46,9 @@
                 border-collapse: collapse;
             }
             tr, td, th{ border: 1px black solid;}
+            tbody{
+                display: contents;
+            }
         </style>
     </head>
     <body>
