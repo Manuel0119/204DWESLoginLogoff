@@ -14,11 +14,6 @@
                 <td colspan="2">
                     <input type="submit" id="iniciarSesion" value="Iniciar Sesion" name="iniciarSesion">
                 </td>
-            </tr>  
-            <tr>
-                <td colspan="2">
-                    <input type="submit" id="registro" name="registro" value="Registrarse">
-                </td>
             </tr>
             <tr>
                 <td colspan="2">
